@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Na-Technickou.cz | Kompletní příprava a vyřízení STK bez starostí</title>
-    <!-- Tailwind CSS CDN -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome Font Icons -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script>
@@ -43,70 +43,71 @@
 </head>
 <body class="font-sans bg-stk-light text-slate-800 antialiased selection:bg-stk-red selection:text-white">
 
-    <!-- Kontaktní horní lišta -->
-    <div class="bg-stk-dark text-slate-300 text-sm py-2 px-4 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-            <div class="flex items-center space-x-6 text-xs sm:text-sm">
-                <span class="flex items-center gap-2">
-                    <i class="fa-solid fa-clock text-stk-red"></i> Kdykoliv nám zavolejte
-                </span>
-                <span class="hidden sm:inline-flex items-center gap-2">
-                    <i class="fa-solid fa-shield-halved text-stk-red"></i> 100% garance přípravy
-                </span>
-            </div>
-            <div class="flex items-center space-x-4 text-xs sm:text-sm font-medium">
-                <a href="tel:777500552" class="hover:text-white transition flex items-center gap-1.5 text-stk-red font-bold">
-                    <i class="fa-solid fa-phone"></i> 777 500 552
-                </a>
-                <a href="mailto:info@na-technickou.cz" class="hover:text-white transition hidden md:flex items-center gap-1.5">
-                    <i class="fa-solid fa-envelope"></i> info@na-technickou.cz
-                </a>
+    
+    <div class="sticky top-0 z-50">
+        
+        <div class="bg-stk-dark text-slate-300 text-sm py-2 px-4 border-b border-slate-800">
+            <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+                <div class="flex items-center space-x-6 text-xs sm:text-sm">
+                    <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-clock text-stk-red"></i> Kdykoliv nám zavolejte
+                    </span>
+                    <span class="hidden sm:inline-flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-stk-red"></i> 100% garance přípravy
+                    </span>
+                </div>
+                <div class="flex items-center space-x-4 text-xs sm:text-sm font-medium">
+                   
+                    <a href="tel:777500552" class="flex items-center gap-1.5 text-stk-red font-bold md:pointer-events-none md:cursor-default">
+                        <i class="fa-solid fa-phone"></i> 777 500 552
+                    </a>
+                    <a href="mailto:info@na-technickou.cz" class="hover:text-white transition hidden md:flex items-center gap-1.5">
+                        <i class="fa-solid fa-envelope"></i> info@na-technickou.cz
+                    </a>
+                </div>
             </div>
         </div>
+
+       
+        <header class="bg-white shadow-sm border-b border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+              
+                <a href="#" class="flex items-center gap-3">
+                    <img src="logo.jpg" alt="Na-Technickou.cz Logo" class="h-14 sm:h-16 w-auto object-contain mix-blend-multiply brightness-110 contrast-200">
+                    <div class="flex flex-col">
+                        <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-stk-dark uppercase">
+                            NA-<span class="text-stk-red">TECHNICKOU</span>.CZ
+                        </span>
+                        <span class="text-xs text-slate-500 font-medium tracking-widest uppercase">Příprava & Vyřízení STK</span>
+                    </div>
+                </a>
+
+               
+                <div class="flex items-center space-x-4">
+                    <a href="#dotaznik" class="hidden md:inline-flex text-sm font-semibold text-slate-700 hover:text-stk-red px-3 py-2 transition">
+                        Proč my?
+                    </a>
+                    <a href="#sluzby" class="hidden md:inline-flex text-sm font-semibold text-slate-700 hover:text-stk-red px-3 py-2 transition">
+                        Co nabízíme
+                    </a>
+                    <a href="#kontakt" class="hidden md:inline-flex text-sm font-semibold text-slate-700 hover:text-stk-red px-3 py-2 transition">
+                        Kontakt
+                    </a>
+                </div>
+            </div>
+        </header>
     </div>
 
-    <!-- Hlavní Navigace -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 bg-stk-red rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-stk-red/30 group-hover:scale-105 transition transform">
-                    <i class="fa-solid fa-car-on"></i>
-                </div>
-                <div class="flex flex-col">
-                    <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-stk-dark uppercase">
-                        NA-<span class="text-stk-red">TECHNICKOU</span>.CZ
-                    </span>
-                    <span class="text-xs text-slate-500 font-medium tracking-widest uppercase">Příprava & Vyřízení STK</span>
-                </div>
-            </a>
-
-            <!-- Navigace a rychlá akce -->
-            <div class="flex items-center space-x-4">
-                <a href="#dotaznik" class="hidden md:inline-flex text-sm font-semibold text-slate-700 hover:text-stk-red px-3 py-2 transition">
-                    Proč my?
-                </a>
-                <a href="#sluzby" class="hidden md:inline-flex text-sm font-semibold text-slate-700 hover:text-stk-red px-3 py-2 transition">
-                    Co nabízíme
-                </a>
-                <a href="#kontakt" class="hidden md:inline-flex text-sm font-semibold text-slate-700 hover:text-stk-red px-3 py-2 transition">
-                    Kontakt
-                </a>
-                
-            </div>
-        </div>
-    </header>
-
-    <!-- HERO SEKCE -->
+    
     <section class="relative bg-stk-dark text-white overflow-hidden">
         <div class="absolute inset-0 hero-gradient z-10"></div>
-        <!-- Background Decorator -->
+        
         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#dc2626_1px,transparent_1px)] [background-size:16px_16px]"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-20">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Hero Levý Text -->
+               
                 <div class="lg:col-span-7 space-y-6">
                     <div class="inline-flex items-center gap-2 bg-stk-red/20 border border-stk-red/40 px-3 py-1.5 rounded-full text-stk-red font-semibold text-xs uppercase tracking-wider">
                         <i class="fa-solid fa-circle-check"></i> Bezstarostná technická kontrola
@@ -120,24 +121,23 @@
                         Šetříme váš čas i nervy. Vaše auto si vyzvedneme, kompletně ho připravíme, odstraníme veškeré závady a vrátíme vám ho s platnou technickou kontrolou.
                     </p>
 
-                    <!-- CTA Tlačítka -->
-                    <!-- Kontaktní informace (statické) -->
-        <div class="flex flex-col sm:flex-row gap-4 pt-2">
-            <div class="bg-stk-red text-white text-center font-bold px-8 py-4 rounded-xl shadow-lg shadow-stk-red/30 text-lg flex items-center justify-center gap-3 cursor-default">
-                <i class="fa-solid fa-phone"></i>
-                <span>Telefonní číslo: 777 500 552</span>
-            </div>
-            <div class="bg-slate-800 text-white text-center font-semibold px-6 py-4 rounded-xl border border-slate-700 flex items-center justify-center gap-2 cursor-default">
-                <i class="fa-solid fa-envelope text-stk-red"></i>
-                <span>info@na-technickou.cz</span>
-            </div>
-</div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <div class="bg-stk-red text-white text-center font-bold px-8 py-4 rounded-xl shadow-lg shadow-stk-red/30 text-lg flex items-center justify-center gap-3 cursor-default">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Telefonní číslo: 777 500 552</span>
+                        </div>
+                        <a href="mailto:info@na-technickou.cz" class="bg-slate-800 hover:bg-slate-700 transition text-white text-center font-semibold px-6 py-4 rounded-xl border border-slate-700 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-envelope text-stk-red"></i>
+                            <span>info@na-technickou.cz</span>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Hero Pravý Obrázek / Karta -->
+                
                 <div class="lg:col-span-5 relative">
                     <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <!-- Červený podkresový zářič -->
+                        
                         <div class="absolute -inset-1 bg-gradient-to-r from-stk-red to-rose-600 rounded-3xl blur opacity-30"></div>
                         
                         <div class="relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
@@ -155,7 +155,7 @@
                                         <h4 class="font-bold text-white text-lg">Garantovaný průběh</h4>
                                         <p class="text-xs text-slate-400">Postaráme se o vše od A do Z</p>
                                     </div>
-                                    <img src="unnamed (2).jpg" alt="STK známky" class="h-12 w-auto object-contain rounded bg-white/5 p-1" onerror="this.onerror=null; this.src='https://placehold.co/100x100/1e293b/ffffff?text=STK+Znamky';">
+                                    <img src="unnamed (4).jpg" alt="STK známky" class="h-12 w-auto object-contain rounded bg-white/5 p-1" onerror="this.onerror=null; this.src='https://placehold.co/100x100/1e293b/ffffff?text=STK+Znamky';">
                                 </div>
                                 
                                 <div class="space-y-2 text-sm text-slate-300">
@@ -181,7 +181,7 @@
         </div>
     </section>
 
-    <!-- SEKCIE: POZNÁVÁTE SE V TĚCHTO OTÁZKÁCH? -->
+    
     <section id="dotaznik" class="py-20 bg-white relative">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -192,7 +192,7 @@
                 </h3>
             </div>
 
-            <!-- Blok otázek z dodaného textu -->
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 
                 <div class="bg-slate-50 border-2 border-slate-100 hover:border-stk-red/40 p-6 rounded-2xl transition duration-300 relative group card-shadow">
@@ -227,7 +227,7 @@
 
             </div>
 
-            <!-- Odpověď a řešení (Dodaný text) -->
+           
             <div class="bg-gradient-to-br from-stk-dark to-stk-slate text-white p-8 md:p-10 rounded-3xl shadow-xl relative overflow-hidden">
                 <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl text-white font-black">
                     <i class="fa-solid fa-circle-check"></i>
@@ -247,7 +247,7 @@
                     </p>
 
                     <div class="pt-4 flex flex-wrap items-center gap-4">
-                        <a href="tel:777500552" class="bg-stk-red hover:bg-stk-redhover text-white font-bold px-6 py-3.5 rounded-xl transition flex items-center gap-2 shadow-lg">
+                        <a href="tel:777500552" class="bg-stk-red hover:bg-stk-redhover text-white font-bold px-6 py-3.5 rounded-xl transition flex items-center gap-2 shadow-lg md:pointer-events-none md:cursor-default">
                             <i class="fa-solid fa-phone"></i>
                             <span>Kdykoliv nám zavolejte</span>
                         </a>
@@ -259,7 +259,7 @@
         </div>
     </section>
 
-    <!-- SEKCE NÁŠ PROCES & SLUŽBY -->
+    
     <section id="sluzby" class="py-20 bg-slate-100/70 border-t border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -275,7 +275,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <!-- Krok 1 -->
+                
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow flex flex-col justify-between relative">
                     <div>
                         <div class="w-14 h-14 bg-red-50 text-stk-red rounded-2xl flex items-center justify-center text-2xl font-black mb-6">
@@ -292,7 +292,7 @@
                     </div>
                 </div>
 
-                <!-- Krok 2 -->
+              
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow flex flex-col justify-between relative">
                     <div>
                         <div class="w-14 h-14 bg-red-50 text-stk-red rounded-2xl flex items-center justify-center text-2xl font-black mb-6">
@@ -309,7 +309,7 @@
                     </div>
                 </div>
 
-                <!-- Krok 3 -->
+               
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow flex flex-col justify-between relative">
                     <div>
                         <div class="w-14 h-14 bg-red-50 text-stk-red rounded-2xl flex items-center justify-center text-2xl font-black mb-6">
@@ -326,7 +326,7 @@
                     </div>
                 </div>
 
-                <!-- Krok 4 -->
+              
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow flex flex-col justify-between relative">
                     <div>
                         <div class="w-14 h-14 bg-red-50 text-stk-red rounded-2xl flex items-center justify-center text-2xl font-black mb-6">
@@ -345,10 +345,10 @@
 
             </div>
 
-            <!-- Vizuální galerie / Ilustrace služeb -->
+          
             <div class="mt-16 bg-white p-6 md:p-8 rounded-3xl border border-slate-200 card-shadow grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div class="space-y-4">
-                    <h4 class="text-2xl font-bold text-stk-dark">Garance platné červené i zelené známky</h4>
+                    <h4 class="text-2xl font-bold text-stk-dark">Garance platné červené známky</h4>
                     <p class="text-slate-600 leading-relaxed">
                         Neztrácejte drahocenný čas na STK linkách. Známe veškeré požadavky a detaily technických i emisních kontrol. Vaše vozidlo připravíme tak, aby prošlo bez jakýchkoliv komplicací.
                     </p>
@@ -365,14 +365,14 @@
                     </ul>
                 </div>
                 <div class="flex justify-center items-center bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                    <img src="unnamed (2).jpg" alt="Známky STK a Emise" class="max-h-64 object-contain drop-shadow-md hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://placehold.co/400x300/f8fafc/dc2626?text=STK+Emise+Znamky';">
+                    <img src="unnamed (4).jpg" alt="Známky STK a Emise" class="max-h-64 object-contain drop-shadow-md hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://placehold.co/400x300/f8fafc/dc2626?text=STK+Emise+Znamky';">
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- KONTAKTNÍ SEKCE A FORMULÁŘ -->
+   
     <section id="kontakt" class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -386,20 +386,20 @@
                 </p>
             </div>
 
-            <!-- Karty s kontaktními údaji -->
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                 
-                <!-- Telefon -->
-                <a href="tel:777500552" class="flex flex-col items-center text-center p-8 bg-slate-50 hover:bg-red-50/50 border-2 border-slate-100 hover:border-stk-red/40 rounded-3xl transition duration-300 card-shadow group">
-                    <div class="w-16 h-16 bg-stk-red text-white rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition shadow-lg shadow-stk-red/20">
+                
+                <a href="tel:777500552" class="flex flex-col items-center text-center p-8 bg-slate-50 border-2 border-slate-100 rounded-3xl transition duration-300 card-shadow group md:pointer-events-none md:cursor-default">
+                    <div class="w-16 h-16 bg-stk-red text-white rounded-2xl flex items-center justify-center text-2xl mb-4 shadow-lg shadow-stk-red/20">
                         <i class="fa-solid fa-phone"></i>
                     </div>
                     <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Telefonní kontakt</span>
-                    <span class="text-2xl font-black text-stk-dark group-hover:text-stk-red transition">777 500 552</span>
+                    <span class="text-2xl font-black text-stk-dark">777 500 552</span>
                     <span class="text-xs text-slate-400 mt-2">Kdykoliv nám zavolejte</span>
                 </a>
 
-                <!-- Email -->
+               
                 <a href="mailto:info@na-technickou.cz" class="flex flex-col items-center text-center p-8 bg-slate-50 hover:bg-red-50/50 border-2 border-slate-100 hover:border-stk-red/40 rounded-3xl transition duration-300 card-shadow group">
                     <div class="w-16 h-16 bg-stk-dark text-white rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition shadow-lg shadow-stk-dark/20">
                         <i class="fa-solid fa-envelope"></i>
@@ -409,7 +409,7 @@
                     <span class="text-xs text-slate-400 mt-2">Napište nám dotaz</span>
                 </a>
 
-                <!-- Web -->
+                
                 <div class="flex flex-col items-center text-center p-8 bg-slate-50 border-2 border-slate-100 rounded-3xl card-shadow">
                     <div class="w-16 h-16 bg-slate-200 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-4">
                         <i class="fa-solid fa-globe"></i>
@@ -421,26 +421,24 @@
 
             </div>
 
-
         </div>
     </section>
 
-    <!-- PATIČKA -->
+   
     <footer class="bg-stk-dark text-slate-400 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-slate-800 pb-8">
                 
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-stk-red rounded-lg flex items-center justify-center text-white font-black text-xl">
-                        <i class="fa-solid fa-car-on"></i>
-                    </div>
+                    <img src="logo.jpg" alt="Na-Technickou.cz Logo" class="h-10 w-auto object-contain rounded-md">
                     <span class="text-xl font-extrabold text-white uppercase tracking-tight">
                         NA-<span class="text-stk-red">TECHNICKOU</span>.CZ
                     </span>
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-6 text-sm font-medium">
-                    <a href="tel:777500552" class="hover:text-white transition flex items-center gap-2">
+                    
+                    <a href="tel:777500552" class="flex items-center gap-2 md:pointer-events-none md:cursor-default">
                         <i class="fa-solid fa-phone text-stk-red"></i> 777 500 552
                     </a>
                     <a href="mailto:info@na-technickou.cz" class="hover:text-white transition flex items-center gap-2">
@@ -454,19 +452,22 @@
             </div>
 
             <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
-                <p>&copy; <span id="currentYear"></span> Na-Technickou.cz. Všechna práva vyhrazena.</p>
+                <p>&copy; <span id="currentYear"></span> Na-Technickou.cz. Všechna práva vyhrazena. | IČO: 86766520</p>
                 <p>Kompletní příprava a zprostředkování technické kontroly vozidel.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Nastavení aktuálního roku v patičce
+        
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // Jednoduchá obsluha odeslání formuláře (bez reloadu stránky)
+        
         function handleFormSubmit(event) {
             event.preventDefault();
             const form = document.getElementById('contactForm');
             const successMsg = document.getElementById('formSuccess');
         }
+    </script>
+</body>
+</html>
